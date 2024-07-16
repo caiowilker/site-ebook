@@ -17,31 +17,39 @@
         <section id="produtos">
             <div class="produto">
                 <img src="ebook1.png" alt="E-book 1">
-                <h2>Guia Completo de Saúde e Bem Estar: Caminhos para uma Vida Saudáve</h2>
-                <p>Descrição breve do e-book 1</p>
-                <p class="preco">R$ 49,90</p>
-                <button class="btn" onclick="confirmPurchase('Guia Completo de Saúde e Bem Estar: Caminhos para uma Vida Saudáve')">Comprar Agora</button>
+                <h2>Guia Completo de Saúde e Bem Estar: Caminhos para uma Vida Saudável</h2>
+                <p>🌿 Descubra o caminho para uma vida saudável com nosso Guia Completo de Saúde e Bem-Estar! 🏃‍♂️✨
+
+                    Explore estratégias comprovadas e dicas práticas para melhorar sua saúde física e mental. Este eBook abrangente oferece desde nutrição e exercícios até técnicas de relaxamento e mindfulness, tudo projetado para ajudá-lo a alcançar seu máximo potencial de bem-estar. Seja o protagonista da sua saúde e comece hoje mesmo a transformar sua vida para melhor! 🌟</p>
+                <p class="preco">R$ 29,90</p>
+                <button class="btn" data-link="https://pay.hotmart.com/L94353352F" onclick="confirmPurchase('Guia Completo de Saúde e Bem Estar: Caminhos para uma Vida Saudável', 'https://pay.hotmart.com/L94353352F')">Comprar Agora</button>
             </div>
             <div class="produto">
                 <img src="ebook4.png" alt="E-book 2">
                 <h2>O Guia Definitivo para o Emagrecimento Saudável</h2>
-                <p>Descrição breve do e-book 2</p>
-                <p class="preco">R$ 39,90</p>
-                <button class="btn" onclick="confirmPurchase('O GuiaDefinitivo para o Emagrecimento Saudável')">Compra Agora</button>
+                <p>🌟 Transforme sua vida com o guia definitivo para emagrecimento saudável! 🌟
+
+                    Descubra como alcançar seu peso ideal de forma sustentável e sem sacrifícios extremos! Nosso eBook exclusivo reúne as melhores estratégias de nutrição, exercícios eficazes e dicas de motivação para você conquistar resultados reais. Baseado em evidências científicas e com orientações práticas, este guia é o seu aliado para uma transformação completa. Baixe agora e comece sua jornada rumo a uma vida mais leve, saudável e cheia de energia! ✨</p>
+                <p class="preco">R$ 29,90</p>
+                <button class="btn" data-link="https://pay.hotmart.com/M94352881K" onclick="confirmPurchase('O Guia Definitivo para o Emagrecimento Saudável', 'https://pay.hotmart.com/M94352881K')">Comprar Agora</button>
             </div>
             <div class="produto">
                 <img src="ebook3.png" alt="E-book 3">
                 <h2>Dominando Habilidades Técnicas e de Marketing Digital: Guia Completo para Carreiras de Sucesso</h2>
-                <p>Descrição breve do e-book 2</p>
-                <p class="preco">R$ 39,90</p>
-                <button class="btn" onclick="confirmPurchase('Dominando Habilidades Técnicas e de Marketing Digital: Guia Completo para Carreiras de Sucesso')">Comprar Agora</button>
+                <p>🚀 Transforme sua carreira com o guia definitivo para dominar habilidades técnicas e de marketing digital! 📈
+
+                    Descubra as estratégias essenciais para se destacar no mercado atual. Este eBook abrangente oferece desde fundamentos técnicos até técnicas avançadas de marketing digital, tudo em um só lugar. Ideal para iniciantes e profissionais experientes que desejam atualizar seus conhecimentos, este guia prático e acessível é o seu passaporte para o sucesso na carreira. Não perca tempo, invista no seu futuro agora mesmo! 🌟</p>
+                <p class="preco">R$ 28,90</p>
+                <button class="btn" data-link="https://pay.hotmart.com/B94353570N" onclick="confirmPurchase('Dominando Habilidades Técnicas e de Marketing Digital: Guia Completo para Carreiras de Sucesso', 'https://pay.hotmart.com/B94353570N')">Comprar Agora</button>
             </div>
             <div class="produto">
                 <img src="ebook2.png" alt="E-book 4">
                 <h2>Dominando Habilidades Técnicas e de MARKETING DIGITAL: Guia Completo Para Carreiras de Sucesso</h2>
-                <p>Descrição breve do e-book 2</p>
-                <p class="preco">R$ 39,90</p>
-                <button class="btn" onclick="confirmPurchase('Dominando Habilidades Técnicas e de MARKETING DIGITAL: Guia Completo Para Carreiras de Sucesso')">Comprar Agora</button>
+                <p>🚀 Transforme sua carreira com o eBook definitivo: "Dominando Habilidades Técnicas e de Marketing Digital". 💼⭐
+
+                    Descubra as habilidades essenciais que impulsionam o sucesso no mundo digital moderno. Desde estratégias avançadas de marketing até o domínio das ferramentas técnicas mais procuradas, este guia abrangente é o seu passaporte para se destacar no mercado competitivo de hoje. Prepare-se para alcançar novos patamares profissionais e construir uma carreira sólida e bem-sucedida no universo digital. Não espere mais para investir no seu futuro profissional! 🌟</p>
+                <p class="preco">R$ 19,90</p>
+                <button class="btn" data-link="https://pay.hotmart.com/J94353143C" onclick="confirmPurchase('Dominando Habilidades Técnicas e de MARKETING DIGITAL: Guia Completo Para Carreiras de Sucesso', 'https://pay.hotmart.com/J94353143C')">Comprar Agora</button>
             </div>
             <!-- Adicione mais produtos conforme necessário -->
         </section>
@@ -59,7 +67,7 @@
     <div id="confirmation-popup" class="popup hidden">
         <div class="popup-content">
             <p>Você selecionou <span id="product-name"></span>. Deseja continuar com a compra?</p>
-            <a href="https://linkparapagamento.com" class="btn">Sim, Comprar</a>
+            <a id="purchase-link" href="#" class="btn">Sim, Comprar</a>
             <button class="btn cancel" onclick="closePopup()">Cancelar</button>
         </div>
     </div>
